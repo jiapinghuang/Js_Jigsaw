@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title></title>
+
+  <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+		<style>
+			a{
+				display: block;
+				width: 200px;
+				height: 80px;
+				background: white;
+				color: royalblue;
+				position: absolute;
+				top: 20%;
+				left: 44%;
+				text-align: center;
+				font-size: 22px;
+				line-height: 80px;
+				border-radius: 7px;
+				opacity: 0.2;
+				transition: all 1s;
+			}
+			a:hover{
+				opacity: 1;
+				background: yellow;
+				color: black;
+			}
+		</style>
+</head>
+<body>
+<a href="game.html?game=0&win=0&grade=9"  id="can_btn">开始游戏</a>
+<canvas class="canvas"></canvas>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+//	setTimeout("javascript:location.href='index.html'", 16000);
+	var game=GetQueryString("game");
+	var win=GetQueryString("win");
+	var can_btn=document.getElementById("can_btn");
+	if(game=="1"&&win=="1"){
+		can_btn.innerHTML="下一关";
+		can_btn.href='game.html?game=0&win=0&grade=36';
+	}else if(win=="2"){
+		can_btn.style.display="none";
+	}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			 canvas {
+          	  position: absolute;
+           	  top: 0;
+          	  left: 0;
+       		 }
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#contain{
+				margin: 0 auto;
+				width: 1700px;
+			}
+			#main_36{
+				width: 1220px;	
+				float: left;	
+			}
+			.box_36{							
+				float: left;
+				border: 1px solid red;
+				width: 200px;
+				height: 112px;
+			}
+			#main_36 img{
+				width: 200px;
+				height: 112px;
+			}
+			
+			#main_9{
+				width: 1300px;
+				float: left;
+			}
+			.box_9{							
+				float: left;
+				border: 1px solid white;	
+				width: 420px;
+				height: 235px;		
+			}
+			#main_9 img{
+				width: 420px;
+				height: 235px;	
+			}
+			/*交互*/
+			
+			.box_9 :hover{
+				box-shadow:5px 5px 5px black;
+			}
+			
+			.nav{
+				width: 400px;
+				height: 400px;
+				background-color: white;
+				float: left;
+				display: inline-block;
+				text-align: center;
+			}
+			#mark{
+				width: 400px;
+				height: 200px;
+				background-color: pink;
+				float: left;		
+				background-image: url(img/1pic.jpg);	
+				background-size:contain;	
+			}
+			
+			#type{
+				margin-bottom: 10px;
+				width: 400px;
+				height: 100px;
+				background-color: pink;
+				float: left;
+				display: inline-block;
+				text-align: center;
+			}
+			#type span{			
+				line-height: 100px;
+				color: white;
+				font-size: 28px;
+			}
+			
+		</style>
+		<script type="text/javascript" src="js/game.js" ></script>
+	</head>
+	<body>
+			<div id="contain">									
+				<div class="nav">
+					<div id="type">
+						<span>最美拼图</span>				
+					</div>
+					<div id="mark"></div>
+				</div>		
+			</div>					
+	
+			
+	</body>
+</html>
